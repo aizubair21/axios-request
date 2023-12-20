@@ -21,46 +21,22 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## About Project
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- This is a project build by using laravel. build testing purpose. here I make test using axios request inside from a blade file.
+- This is aims to make a SPA like application. All CRUD operation done with axios. so no page loading to add or delete data. also open create form.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## How To Work 
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Page loading required to navigate one page to another page. but, no page loading to CRUD
+- When you come to CRUD index page. a Ajux request automaticly send to server and get response by all CRUD data. data won't come with page navigate. page loading quit fast.
+- Cliend side JavaScript get the server response with an html page instead of raw-array data.
+- Then cliend side JavaScript show html data to DOM. this feel like SPA application. but CSR instead of SSR, which is unuseful for SEO.
+- When you aware to add some todo. by clicking add or create button a popup modal with form immediately shown to you. this stop preventing navigate to another page.
+- Fill-up the form. as soon as click save or store button another function is called. function prevent to page loading. function takes the input value of form.
+- Then send a request to server with data.
+- Server save data and return with response success of error.
+- Geeting server response front end JavaScript immediately send another Axios request server to get all crud data. then do first 3 and 4 steaps.
+- On delete data. Another Axios request send to server with target data id. server delete data and return response with success or error.
+- Geting response by client side do first 3 and 4 steaps. 
